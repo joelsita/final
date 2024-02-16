@@ -1,0 +1,732 @@
+/* mobile first  */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1080px;
+  width:100%;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-position: center;
+  /* background-size: center; */
+}
+
+/* logo */
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  padding: 3px;
+  /* margin: auto; */
+  /* display all nav element side by side */
+  display: block;
+  /* justify-content: baseline; */
+}
+
+/* nav list */
+.navbar ul li {
+  /* for list to show side by side */
+  display: none;
+  /* create space between list element */
+  margin-top: 20px;
+  font-size: 25px;
+  padding-left: 50px;
+}
+
+/* nav ankor links text */
+.navbar ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  padding: 15px;
+}
+
+/* nav link hover affect */
+li a:hover {
+  background: white;
+  transition: 0.5s;
+}
+
+/* nav bar background effect  */
+.navbar a:hover {
+  background: black;
+  transition: 0.5s;
+}
+
+.content {
+  width: 100%;
+  color: black;
+  /* bring section down */
+  top: 45%;
+  /* bring contect section to y axis */
+  transform: translatey(-10%);
+  /* text-align: center; */
+}
+
+.content h1 {
+  margin-top: 70px;
+  font-size: 25px;
+  font-weight: 800;
+  padding-left: 5px;
+}
+
+button {
+  width: 100px;
+  /* make box bigger */
+  padding: 20px;
+  margin: 20px 5px;
+  text-align: center;
+  /* change shape of the box */
+  border-radius: 25px;
+  color: black;
+  border: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: rgb(0, 155, 226);
+  transition: 0.5s;
+}
+
+.banner video {
+  right: 0;
+  bottom: 0;
+  /* moves the video position down so nav bar and log display at top */
+  z-index: -3;
+  margin-bottom: 50px;
+}
+
+/* toggle section */
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 50px;
+  color: #f7f7f7;
+  padding-left: 50px;
+}
+
+#check:checked ~ ul li {
+  display: block;
+  /* padding-right: 80px; */
+  background-color: blue;
+  border: 2px solid red;
+}
+
+/* 
+main section */
+main {
+  flex: 1 0 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+/* about section */
+
+.about .about-content {
+  padding: 7px;
+}
+
+.about .about-content .title {
+  width: 100%;
+  /* text-align: center; */
+  font-size: 30px;
+}
+
+.about .about-content h2 {
+  font-size: 35px;
+  color: #3099e9;
+  text-transform: uppercase;
+}
+
+.about .about-content p {
+  font-size: 18px;
+  color: #6a6a6a;
+  text-transform: capitalize;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about .about-content .cards {
+  grid-gap: 50px;
+  margin: 20px auto;
+}
+
+.about .about-content .cards .card img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.about .about-content .cards .card .article p {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* about section end here */
+
+/* galleries */
+
+.gallery {
+  flex-wrap: wrap;
+}
+
+.gallery-header h1 {
+  font-size: 30px;
+  color: #3099e9;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 7px;
+}
+
+/* events start here */
+.blog-section {
+  width: 100%;
+}
+
+.blog-section .section-content {
+  width: 100%;
+  padding: 7px;
+}
+
+.blog-section .section-content .title {
+  width: 100%;
+}
+
+.blog-section .section-content h2 {
+  font-size: 30px;
+  color: #3099e9;
+  text-transform: uppercase;
+  padding-right: 45px;
+}
+
+.blog-section .section-content p {
+  font-size: 18px;
+  color: #6a6a6a;
+  text-transform: capitalize;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.blog-section .section-content .cards {
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+.blog-section .section-content .cards .card {
+  width: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.blog-section .section-content .cards .card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-section .section-content .cards .card .article {
+  padding: 15px 20px;
+}
+
+.blog-section .section-content .cards .card .article h4 {
+  font-size: 18px;
+  color: #0082e6;
+}
+
+.blog-section .section-content .cards .card .article p {
+  font-size: 20px;
+  color: #6a6a6a;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.blog-section .section-content .cards .card a {
+  display: inline-block;
+  background-color: #0082e6;
+  color: #f7f7f7;
+  padding: 8px 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .posted-date p {
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  font-display: inline-block;
+  background-color: #0082e6;
+  color: #f7f7f7;
+  padding: 6px 15px;
+}
+/* events End here */
+
+/* contact section */
+
+.contact-dive {
+ padding: 20px;
+  margin: 10px 0;
+ 
+}
+
+.contact-dive .contact {
+  position: relative;
+  min-height: 50vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(99, 97, 104, 0.7), rgba(0, 0, 0, 0.7)),
+    url(assests/images/child.jpeg);
+  background-size: cover;
+}
+
+
+.contact .content-contact h2 {
+  font-weight: 800;
+  color: white;
+  margin-bottom: 10px;
+
+  font-size: 35px;
+
+  text-transform: uppercase;
+  
+}
+
+.contact .content-contact p {
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  text-transform: capitalize;
+  width: 100%;
+
+}
+
+.container-contact {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 40px; */
+}
+
+.container-contact .contactInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container-contact .contactInfo .box .icon {
+  min-width: 30px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  font-size: 30px;
+}
+
+.container-contact .contactInfo .box.text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 15px;
+  color: white;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.container-contact .contactInfo .box .text p {
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+}
+
+.container-contact .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #3099e9;
+  font-size: 20px;
+}
+
+.contactForm {
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #0082e6;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* footer section */
+footer {
+  background: #404141;
+  margin-top: auto;
+}
+
+.footercontainer {
+  width: 100%;
+}
+
+.socialIcons {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 20px;
+  color: black;
+  opacity: 0.9;
+}
+
+/* hover effect */
+.socialIcons a:hover {
+  background-color: #1111;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 10px 0;
+}
+
+.footerNav ul {
+  display: inline-block;
+}
+
+.footerNav li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+}
+
+.footerBottom p {
+  color: white;
+  font-size: 20px;
+  padding-right: 190px;
+}
+
+.footerNav li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  padding: 2px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+
+
+/* Medium devices or bigger than 768px (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar{
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    /* display all nav element side by side */
+    display:flex;
+    align-items: center;
+    /* create space between the nav element i.e image  in one place and list in another space  */
+    justify-content: space-around;
+  }
+
+  .logo{
+    width: 100px;
+    margin-top:  -20px;
+    cursor: pointer;
+  }
+  
+  /* nav list */
+  .navbar ul li {
+    /* for list to show side by side */
+    display: inline-block;
+    /* create space between list element */
+    margin: 0px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  
+  /* nav ankor links text */
+  .navbar ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  padding: 5px;
+  
+  }
+  .checkbtn {
+    display: none;
+  }
+  
+
+  .content{
+    width: 100%;
+    color: black;
+    /* bring section down */
+    top:45%;
+    /* bring contect section to y axis */
+    transform: translatey(-30%);
+    text-align: center;
+  
+  }
+  
+  .content h1{
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  button{
+    width: 200px;
+    /* make box bigger */
+    padding: 15px;
+    margin:20px 5px;
+    text-align: center;
+    /* change shape of the box */
+    border-radius: 20px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    
+  }
+  
+  /* button:hover{
+    background: rgb(0, 155, 226);
+    transition: 0.5s;
+  } */
+
+  .about .about-content {
+    width: 85%;
+    margin: 20px auto;
+  }
+  
+  .about .about-content .title{
+    width: 60%;
+    /* text-align: center; */
+    margin: auto;
+  }
+  
+  .about .about-content h2{
+    font-size: 30px;
+    color: #3099e9;
+  
+  }
+ .about1 h2{
+  text-align: none;
+ }
+  
+  .about .about-content p{
+    
+    padding-right: 40px;
+  }
+
+  .about .about-content .cards{
+  
+    margin: 25px auto;
+  }
+  .about .about-content .cards .card{
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+  }
+  
+  .about .about-content .cards .card img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .about .about-content .cards .card .article{
+    padding: 15px 20px;
+  }
+  
+  
+  .blog-section .section-content .cards .card .article h4{
+  font-size: 18px;
+  color: #0082e6;
+  }
+  
+  .about .about-content .cards .card .article p{
+    font-size: 18px;
+    color: #6a6a6a;
+    text-transform: capitalize;
+    }
+  
+
+  /* gallery */
+  .gallery{
+  padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .gallery-header h1{
+    font-size: 30px;
+    color: #3099e9;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2px 0;
+  }
+  
+  
+  
+  .gallery img{
+  width: 400px;
+  height: 400px;
+  /* object-fit: cover; */
+  /* object-position: bottom; */
+  padding: 5px;
+  
+  }
+  
+  .gallery img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+
+
+  .contactForm {
+    width: 80%;
+  }
+
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+    justify-content: space-evenly;
+  }
+  .socialIcons a{
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 50%;
+  
+  }
+
+  .footerNav{
+    margin:  20px 0;
+  }
+  
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+   
+  }
+
+  .footerNav ul li a{
+    letter-spacing: 1px;
+    
+  }
+
+  .footerBottom{
+
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footerBottom p{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+}
