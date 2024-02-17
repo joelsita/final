@@ -71,6 +71,12 @@ li a:hover {
   background: black;
   transition: 0.5s;
 }
+.active{
+  /* border-bottom: 1px solid gray; */
+  /* background: #3498DB; */
+  text-shadow: 2px 2px 2px rgb(77, 5, 5);
+  font-size: x-large;
+}
 
 .content {
   width: 100%;
@@ -123,17 +129,21 @@ button:hover {
 }
 
 .checkbtn {
-  font-size: 50px;
+  font-size: 90px;
   color: #f7f7f7;
-  padding-left: 50px;
+  float: right;
 }
 
 #check:checked ~ ul li {
   display: block;
-  /* padding-right: 80px; */
-  background-color: blue;
-  border: 2px solid red;
+  background-color: #F0F3F4;
+  border: 2px solid gray;
+
 }
+#check:checked ~ ul li a{
+  color: #0082e6;
+}
+
 
 /* 
 main section */
@@ -141,7 +151,7 @@ main {
   flex: 1 0 auto;
 }
 
-.full-width {
+.video-clip{
   width: 100%;
 }
 /* about section */
@@ -305,8 +315,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(99, 97, 104, 0.7), rgba(0, 0, 0, 0.7)),
-    url(assests/images/child.jpeg);
+  background: linear-gradient(rgba(99, 97, 104, 0.7), rgba(0, 0, 0, 0.7));
   background-size: cover;
 }
 
@@ -352,8 +361,8 @@ main {
 }
 
 .container-contact .contactInfo .box .icon {
-  min-width: 30px;
-  height: 30px;
+  min-width: 50px;
+  height: 50px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -365,7 +374,7 @@ main {
 .container-contact .contactInfo .box.text {
   display: flex;
   margin-left: 20px;
-  font-size: 15px;
+  font-size: 25px;
   color: white;
   flex-direction: column;
   font-weight: 500;
@@ -374,13 +383,13 @@ main {
 .container-contact .contactInfo .box .text p {
   font-weight: 500;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .container-contact .contactInfo .box .text h3 {
   font-weight: 500;
   color: #3099e9;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .contactForm {
@@ -435,7 +444,7 @@ footer {
 
 .socialIcons {
   display: flex;
-  /* justify-content: center; */
+ justify-content: space-around;
 }
 
 .socialIcons a {
@@ -454,8 +463,8 @@ footer {
 
 /* hover effect */
 .socialIcons a:hover {
-  background-color: #1111;
-  transition: 0.5s;
+  background-color: #3498DB;
+  transition: .5s;
 }
 
 .socialIcons a:hover i {
@@ -465,16 +474,16 @@ footer {
 
 .footerNav {
   margin: 10px 0;
+  
 }
 
 .footerNav ul {
-  display: inline-block;
+  display: flex;
 }
 
 .footerNav li a {
   color: white;
   margin: 20px;
-  text-decoration: none;
   font-size: 20px;
   opacity: 0.7;
   transition: 0.5s;
@@ -482,15 +491,13 @@ footer {
 
 .footerNav li a:hover {
   opacity: 1;
+  color: #0082e6;
 }
 
-.footerBottom {
-}
 
 .footerBottom p {
   color: white;
   font-size: 20px;
-  padding-right: 190px;
 }
 
 .footerNav li a:hover {
@@ -499,12 +506,13 @@ footer {
 
 .footerBottom {
   padding: 2px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 15px;
 }
 
 .footerBottom p {
   color: white;
+ padding-left: 10px;
 }
 
 
