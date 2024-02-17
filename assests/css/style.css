@@ -36,7 +36,7 @@ html {
 .navbar {
   width: 100%;
   padding: 3px;
-  /* margin: auto; */
+  margin: auto;
   /* display all nav element side by side */
   display: block;
   /* justify-content: baseline; */
@@ -58,12 +58,6 @@ html {
   color: white;
   font-weight: 800;
   padding: 15px;
-}
-
-/* nav link hover affect */
-li a:hover {
-  background: white;
-  transition: 0.5s;
 }
 
 /* nav bar background effect  */
@@ -138,17 +132,12 @@ button:hover {
 
                   /* toggle */
 
-#check:checked ~ ul li {
+#check:checked ~ ul li{
   display: block;
   /* padding-right: 80px; */
-  background-color: #F0F3F4;
-  border: 2px solid gray;
+  background-color: #1f1f20;
+  border: 2px solid rgb(244, 240, 240);
 }
-
-#check:checked ~ ul li a{
-  color: #0082e6;
-}
-
 
 /* 
 main section */
@@ -321,8 +310,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(99, 97, 104, 0.7), rgba(0, 0, 0, 0.7)),
-    url(assests/images/child.jpeg);
+  background: linear-gradient(rgba(99, 97, 104, 0.7), rgba(0, 0, 0, 0.7));
   background-size: cover;
 }
 
@@ -491,10 +479,11 @@ footer {
   color: white;
   margin: 20px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   opacity: 0.7;
   transition: 0.5s;
   font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .footerNav li a:hover {
@@ -513,28 +502,27 @@ footer {
 
 .footerBottom p {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 
 
 /* Medium devices or bigger than 768px (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .navbar{
-    width: 100%;
-    padding: 30px;
-    margin: auto;
-    /* display all nav element side by side */
-    display:flex;
-    align-items: center;
-    /* create space between the nav element i.e image  in one place and list in another space  */
-    justify-content: space-around;
-  }
 
   .logo{
     width: 100px;
     margin-top:  -20px;
     cursor: pointer;
+  }
+
+  .navbar{
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    /* create space between the nav element i.e image  in one place and list in another space  */
+    justify-content: space-between;
   }
   
   /* nav list */
@@ -550,9 +538,6 @@ footer {
   
   /* nav ankor links text */
   .navbar ul li a {
-  text-transform: uppercase;
-  color: white;
-  font-weight: 800;
   padding: 5px;
   
   }
@@ -594,10 +579,7 @@ footer {
     
   }
   
-  /* button:hover{
-    background: rgb(0, 155, 226);
-    transition: 0.5s;
-  } */
+  
 
   .about .about-content {
     width: 85%;
@@ -677,8 +659,6 @@ footer {
   .gallery img{
   width: 400px;
   height: 400px;
-  /* object-fit: cover; */
-  /* object-position: bottom; */
   padding: 5px;
   
   }
@@ -692,20 +672,15 @@ footer {
 
 
   .contactForm {
-    width: 80%;
+    width: 70%;
   }
 
   .socialIcons{
-    display: flex;
     justify-content: center;
-    /* padding: 10px; */
     justify-content: space-evenly;
   }
   .socialIcons a{
-    background-color: #fff;
     margin: 15px;
-    border-radius: 50%;
-  
   }
 
   .footerNav{
@@ -714,26 +689,11 @@ footer {
   
   
   .footerNav ul{
-    display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    font-size: 25px;
+    font-size: 20px;
    
   }
 
-  .footerNav ul li a{
-    letter-spacing: 1px;
-    
-  }
-
-  .footerBottom{
-
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footerBottom p{
-    letter-spacing: 2px;
-  }
-
+ 
 }
