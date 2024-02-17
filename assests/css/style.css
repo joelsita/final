@@ -290,6 +290,7 @@ main {
 
 .blog-section .section-content .cards .card .posted-date p {
   font-weight: 600;
+  position: absolute;
   top: 0;
   left: 0;
   font-display: inline-block;
@@ -593,10 +594,7 @@ footer {
     
   }
   
-  /* button:hover{
-    background: rgb(0, 155, 226);
-    transition: 0.5s;
-  } */
+
 
   .about .about-content {
     width: 85%;
