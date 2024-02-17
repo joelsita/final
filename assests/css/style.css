@@ -129,7 +129,7 @@ button:hover {
 }
 
 .checkbtn {
-  font-size: 90px;
+  font-size: 60px;
   color: #f7f7f7;
   float: right;
 }
@@ -711,26 +711,21 @@ footer {
   
   
   .footerNav ul{
-    display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    font-size: 25px;
-   
   }
 
   .footerNav ul li a{
     letter-spacing: 1px;
+    font-size: 25px;
     
   }
 
   .footerBottom{
-
-    padding: 20px;
     text-align: center;
   }
   
   .footerBottom p{
-    color: white;
     font-size: 25px;
     letter-spacing: 2px;
   }
